@@ -6,12 +6,12 @@ describe('Tests for array utilities', () => {
 
   describe('function addArr adds numbers in array', () => {
     it('should add numbers in array and be truthy', () => {
-        expect(arrays.addArr(numArr)).toBeTruthy();
+      expect(arrays.addArr(numArr)).toBeTruthy();
     });
-    it('should add numbers in array and be 19', () => {
-        expect(arrays.addArr(numArr)).toBe(19);
+    it('should add numbers in array and be 18', () => {
+      expect(arrays.addArr(numArr)).toBe(18);
     });
-})
+  });
 
   describe('function concatArr concatinates 2 arrays', () => {
     it('should concatinate 2 arrays to not equal the first', () => {
@@ -24,10 +24,10 @@ describe('Tests for array utilities', () => {
 
   describe('function cut3 removes 3 items in array', () => {
     it('should contain 3 items except rabbit', () => {
-      expect(arrays.cut3(wordArr)).toEqual(['cat', 'dog', 'rabbit', 'bird']);
-      it('should not contain the third index rabbit', () => {
-        expect(arrays.cut3(wordArr)).not.toContain('rabbit');
-      });
+      expect(arrays.cut3(wordArr)).toEqual(['cat', 'dog', 'bird']);
+    });
+    it('should not contain the third index rabbit', () => {
+      expect(arrays.cut3(wordArr)).not.toContain('rabbit');
     });
     describe('function lgNum get the largest number in array', () => {
       it('should have 6 be largest number', () => {

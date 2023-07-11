@@ -21,7 +21,7 @@ const addArr = (arr: number[]): number => {
 const lgNum = (arr: (string | number)[]): number => {
   let largest = 0 as number;
   arr.forEach((x) => {
-    if (x > largest) {
+    if ((x as number) > largest) {   
       largest = x as number;
     }
   });

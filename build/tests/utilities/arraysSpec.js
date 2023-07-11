@@ -11,8 +11,8 @@ describe('Tests for array utilities', function () {
         it('should add numbers in array and be truthy', function () {
             expect(arrays_1.default.addArr(numArr)).toBeTruthy();
         });
-        it('should add numbers in array and be 19', function () {
-            expect(arrays_1.default.addArr(numArr)).toBe(19);
+        it('should add numbers in array and be 18', function () {
+            expect(arrays_1.default.addArr(numArr)).toBe(18);
         });
     });
     describe('function concatArr concatinates 2 arrays', function () {
@@ -25,10 +25,10 @@ describe('Tests for array utilities', function () {
     });
     describe('function cut3 removes 3 items in array', function () {
         it('should contain 3 items except rabbit', function () {
-            expect(arrays_1.default.cut3(wordArr)).toEqual(['cat', 'dog', 'rabbit', 'bird']);
-            it('should not contain the third index rabbit', function () {
-                expect(arrays_1.default.cut3(wordArr)).not.toContain('rabbit');
-            });
+            expect(arrays_1.default.cut3(wordArr)).toEqual(['cat', 'dog', 'bird']);
+        });
+        it('should not contain the third index rabbit', function () {
+            expect(arrays_1.default.cut3(wordArr)).not.toContain('rabbit');
         });
         describe('function lgNum get the largest number in array', function () {
             it('should have 6 be largest number', function () {

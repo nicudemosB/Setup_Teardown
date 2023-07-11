@@ -16,4 +16,3 @@ describe('newArr should add a new item to the start of array', () => {
     expect(newArr(3, wordArr)).toContain(3);
   });
 });
-
